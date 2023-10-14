@@ -425,7 +425,10 @@ HISTORY:
    69  docker run -it --name cont1 -p 8080:8080 jenkins/jenkins:lts
    70  history
 [root@ip-172-31-12-122 ~]#
-====================================================================LINK: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_form_icon
+====================================================================
+
+
+LINK: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_form_icon
 
 PROCESS: 
 CODE -- > BUILD (DOCKER FILE) -- > IMAGE -- > CONTAINER -- > APP
