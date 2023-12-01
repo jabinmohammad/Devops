@@ -64,12 +64,19 @@ touch file1
 
 ctrl p q
 
-docker images		: to list images
-docker start cont1	: to start cont1
-docker stop cont1	: to stop cont1
-docker kill cont1	: to stop immedieatly cont1
-docker ps 		: to see running containers
-docker ps -a		: to see all containers
+docker pull ubuntu	       : to downlaod image
+docker images	        	   : to list images
+docker ps 	          	   : to see running containers
+docker ps -a          	   : to see all containers
+docker start cont1       	 : to start cont1
+docker stop cont1     	   : to stop cont1
+docker kill cont1     	   : to stop immedieatly cont1
+ctrl p q                   : to exit from a conatiner
+docker attach cont1        : to go inside cont1
+docker commit cont1 raham  : to copy the cont1 packages & files to a raham custom image
+docker build -t netflix:v1 .   : to create a image -> netflix:v1
+docker run -it --name cont1 ubuntu : to create conatiner cont1 with image ubuntu
+
 
 HISTORY:
   1  yum install docker -y
