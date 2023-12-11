@@ -162,7 +162,7 @@ git status
 
 GET BACK THE DELETED FILE:
 Note: we can restore only tracked files.
-
+git reflog : to restore the deleted commits
 
 HISTORY:
 
