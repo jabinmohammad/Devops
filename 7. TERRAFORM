@@ -3,6 +3,9 @@ resources used to run our application on cloud.
 ex: ec2, s3, elb, vpc --------------
 
 
+amazon-linux-extras install epel -y
+yum install stress -y
+
 in genral we used to deploy infra on manual 
 
 Manual:
