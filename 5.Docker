@@ -45,7 +45,7 @@ language: go lang
 ARCHITECTURE:
 DOCKER CLIENT: its a way of interacting with docker (command -- > op)
 DOCKER DAEMON: it manage all the docker components (images, cont, volumes, nlw)
-DOCKER HOST: where we installed docker
+DOCKER HOST: where we installed docker.
 DOCKER REGISTRY: it manages all the  docker images on internet.
 
 
