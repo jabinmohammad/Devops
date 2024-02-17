@@ -16,7 +16,7 @@ it communicate with pods.
 COMPONENTS:
 MASTER NODE:
 1. API SERVER: its for communicating with cluster, it takes command executes and gives output.
-2. ETCD: its a DB od cluster, all the cluster info will store here.
+2. ETCD: its a DB of cluster, all the cluster info will store here.
 3. SCHEDULER: schedules pods on worker nodes, based on hardware resources.
 4. CONTROLLER: used to control the k8s objects.
 1. cloud controllers
