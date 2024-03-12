@@ -700,6 +700,51 @@ spec:
       targetPort: 80
 
 
+Multiple Ports:
+Kubernetes allows you to define multiple ports for both deployments and services. This is useful for applications that use different ports for various functionalities.
+(You can specify multiple ports in both sections of your YAML file, separated by commas.)
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: swiggy
+  name: swiggy-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: swiggy
+  template:
+    metadata:
+      labels:
+        app: swiggy
+    spec:
+      containers:
+      - name: cont1
+        image: rahamshaik/trainservice:latest
+        ports:
+        - containerPort: 8080  # Web traffic
+        - containerPort: 5000  # API server
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: abc
+spec:
+  type: LoadBalancer
+  selector:
+    app: swiggy
+  ports:
+  - port: 80  # External for web traffic
+    targetPort: 8080
+  - port: 8081  # External for API (optional)
+    targetPort: 5000
+
+
+
 
 HISTORY:
 
